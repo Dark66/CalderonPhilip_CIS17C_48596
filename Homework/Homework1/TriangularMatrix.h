@@ -49,7 +49,7 @@ TriangularMatrix<T>::TriangularMatrix(int rows, int columnsPerRow)
     _columnsPerRow = columnsPerRow;
 }
 
-template <class T>int columns = rows;
+template <class T>
 TriangularMatrix<T>::~TriangularMatrix()
 {
     //This destroys the array from the main
@@ -90,6 +90,7 @@ template <class T>
 void TriangularMatrix<T>::DestroyArray(T *array)
 {
     delete[] array;
+
     //Makes sure array is set to value of NULL after it is deleted
     array = NULL;
 }

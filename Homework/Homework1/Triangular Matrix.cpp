@@ -23,9 +23,11 @@ int main(int argc, char *argv[])
     int *array1dInt = triangularMatrixInt.FillArray();
     int **arrayTriangularInt = triangularMatrixInt.FillArray(rows, array1dInt);
 
-    // Print the arrays
+    // Print the one-dimentional array
     std::cout << "Integer of the one-dimentional arra: \n";
     triangularMatrixInt.PrintArray(array1dInt);
+
+    //Print the triangular matrix array
     std::cout << "Integer of the  triangular matrix: \n";
     triangularMatrixInt.PrintArray(arrayTriangularInt, array1dInt);
 
@@ -34,6 +36,7 @@ int main(int argc, char *argv[])
     triangularMatrixInt.DestroyArray(array1dInt);
 
     std::cout<< "Start of the float data type.";
+
     // Initialize a float data type for triangular matrix
     TriangularMatrix<float> triangularMatrixFloat(rows, columnsPerRow);
 
